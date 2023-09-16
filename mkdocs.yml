@@ -56,13 +56,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Notebook:
-      - goes_timelapse.ipynb
-      - pakistan_floods.ipynb
-      - morocco_earthquake.ipynb
+  - Examples:
       - template.ipynb
-  - Markdown:
-      - document.md
   - Blog: https://blog.gishub.org
   - YouTube Channel: https://youtube.com/@giswqs
   - Report Issues: https://github.com/giswqs/open-data/issues
