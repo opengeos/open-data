@@ -1,0 +1,68 @@
+site_name: Notebook Share
+site_description: A website for sharing notebooks and markdown documents
+site_author: Qiusheng Wu
+site_url: https://open-data.gishub.org
+
+repo_url: https://github.com/giswqs/open-data
+
+copyright: "Copyright &copy; 2023 - 2023 Qiusheng Wu"
+
+theme:
+  palette:
+    - scheme: default
+      #   primary: blue
+      #   accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - search.highlight
+  custom_dir: "docs/overrides"
+  font:
+    text: Google Sans
+    code: Regular
+
+plugins:
+  - search
+  - mkdocstrings
+  - git-revision-date
+  - mkdocs-jupyter:
+      include_source: True
+      ignore_h1_titles: True
+      execute: False
+      allow_errors: false
+      ignore: ["name.ipynb"]
+      execute_ignore: "path/*.ipynb"
+
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+
+# extra:
+#   analytics:
+#     provider: google
+#     property: G-XXX
+
+nav:
+  - Home: index.md
+  - Notebook:
+      - goes_timelapse.ipynb
+      - pakistan_floods.ipynb
+      - morocco_earthquake.ipynb
+      - template.ipynb
+  - Markdown:
+      - document.md
+  - Blog: https://blog.gishub.org
+  - YouTube Channel: https://youtube.com/@giswqs
+  - Report Issues: https://github.com/giswqs/open-data/issues
