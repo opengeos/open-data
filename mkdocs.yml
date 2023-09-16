@@ -37,9 +37,9 @@ plugins:
   - mkdocstrings
   - git-revision-date
   - mkdocs-jupyter:
-      include_source: True
-      ignore_h1_titles: True
-      execute: False
+      include_source: true
+      ignore_h1_titles: true
+      execute: true
       allow_errors: false
       ignore: ["name.ipynb"]
       execute_ignore: "path/*.ipynb"

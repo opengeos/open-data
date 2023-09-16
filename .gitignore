@@ -5,6 +5,8 @@ __pycache__/
 docs/*.gif
 private/
 **/*.tif
+docs/*.tif
+docs/*.geojson
 
 # C extensions
 *.so
