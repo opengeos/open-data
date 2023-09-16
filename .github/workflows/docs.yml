@@ -14,9 +14,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # pip install --user --no-cache-dir Cython
-          # pip install --user -r requirements.txt
-      - name: Install dependencies
+          pip install --user --no-cache-dir Cython
+          pip install --user -r requirements.txt
+      - name: Install mkdocs
         run: pip install mkdocs-material mkdocstrings mkdocs-git-revision-date-plugin mkdocs-jupyter mkdocs-pdf-export-plugin ipykernel nbformat==5.4.0 nbconvert==6.5.3
       - name: depoly
         run: mkdocs gh-deploy --force

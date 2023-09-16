@@ -2,3 +2,4 @@
 geemap
 geopandas
 leafmap
+pandas
