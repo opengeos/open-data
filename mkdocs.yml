@@ -58,6 +58,8 @@ nav:
   - Home: index.md
   - Examples:
       - google_buildings.ipynb
+      - libya_buildings.ipynb
+      - morocco_buildings.ipynb
   - Blog: https://blog.gishub.org
   - YouTube Channel: https://youtube.com/@giswqs
   - Report Issues: https://github.com/giswqs/open-data/issues
